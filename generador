@@ -1,0 +1,10 @@
+try:
+  gene=open("gene_nombres.txt","x")
+except FileExistsError:
+  print("el fichero existe todo ok")
+gene=open("gene_nombres.txt","w")
+gene.write("Esto es una lista de nombres:")
+gene.close()
+gene=open("gene_nombres.txt")
+print(gene.read())
+gene.close()
