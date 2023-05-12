@@ -21,6 +21,7 @@ gene.close()
 gene=open("gene_nombres.txt")
 print(gene.read())
 gene.close()
+# Ahora la pregunta para que te de un nombre aleatorio:
 import random
 gene=open("gene_nombres.txt")
 gene_lis=gene.readlines()
